@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 31, 2020, 12:43:05 PM
+    Author     : Mohammed Al 3mawy
+*/
+
+
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;    
+}
+
+form{
+    margin: 0;
+    height: 100%;
+    padding: 20px;    
+    padding-top: 0px;
+}
+
+body{
+    margin: 0;
+    background-image: url("#{resource['assets:Background.jpg']}");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{  
+    text-align: center;
+}
+
+.commandButton{
+
+    margin-bottom: 20px;
+    background-color: bisque;
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+    border-block-color: bisque;
+}
+
+#user_name{
+    text-align: center;
+    padding-right: 10px;
+    margin-bottom: 15px;
+}
+
+#password{
+    text-align: center;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+h1,#user_name,#password{
+    color: #333;
+}

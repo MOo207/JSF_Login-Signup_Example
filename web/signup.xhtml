@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <h:head>
+        <title>SignUp</title>
+        <h:outputStylesheet library="css" name="style.css"/>
+    </h:head>
+    <h:body>
+        <f:view>
+            <h:form>
+                
+                <h1>SignUp Form</h1>
+
+
+                <div id="user_name" style="margin-top: 20px">
+                    <label style="margin: 10px">User Name</label>
+                    <h:inputText value="#{signUpBean.username}"/>
+                </div>
+
+                <div id="password" >
+                    <label style="margin: 15px">Password</label>
+                    <h:inputSecret value="#{signUpBean.password}" />
+                </div>
+
+                <div style="text-align: center;margin-right: 20px; margin-bottom: 20px; margin-top: 20px">
+                    <h:commandButton class="commandButton" value="Sign Up" action="#{signUpBean.InsertData}"/></div>
+
+                <h:messages infoStyle="color:green" errorStyle="color:red" />
+                
+                <div style="text-align: center;margin-right: 20px; margin-bottom: 20px; margin-top: 20px"> 
+                    <h:commandLink action="return" style="text-decoration: none; color: green;" >Click here to go back!</h:commandLink>
+                </div>
+            </h:form>
+        </f:view>
+    </h:body>
+</html>
+

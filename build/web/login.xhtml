@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <h:head>
+        <title>Login</title>
+        <h:outputStylesheet library="css" name="style.css"/>
+    </h:head>
+
+    <h:body>
+        <h:form>
+
+                <h1>Login Form</h1>
+                <div id="user_name" style="margin-top: 20px">
+                    <label style="margin: 10px">User Name</label>
+                    <h:inputText value="#{loginBean.username}"/>
+                </div>
+
+                <div id="password" >
+                    <label style="margin: 15px">Password</label>
+                    <h:inputSecret value="#{loginBean.password}" />
+                </div>
+
+                <div style="text-align: center;margin-right: 20px; margin-bottom: 20px; margin-top: 20px">
+                    <span><h:commandButton id="login_btn" class="commandButton" value="Login" action="#{loginBean.checkLogin()}"/>
+
+                    </span>
+                    <span><h:commandButton class="commandButton" value="Sign Up" action="signup"/>
+                    </span>
+                    <div style="text-align: center"> <h:messages for="login_btn" infoStyle="color:green" errorStyle="color:red" /></div>
+               </div>
+                
+           </h:form>
+       </h:body>
+</html>
