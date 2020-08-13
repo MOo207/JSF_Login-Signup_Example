@@ -9,3 +9,5 @@ JDK 14 </br>
 Mysql connector v8.0.19 </br>
 Apache Tomcat v8.0.53 / Java EE 7 </br>
 JSF 2.2 framework
+<image src="https://github.com/MOo207/JSF_Login_and_Signup_Example/blob/master/screenshots/Login%20Form.png"/>
+<image src="https://github.com/MOo207/JSF_Login_and_Signup_Example/blob/master/screenshots/Signup%20Form.png"/>
